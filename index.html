@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>凤娄菲 Sophie Feng | Hello World!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="game.js"></script>
+</head>
+<body>
+
+  <div id="top" class="page-wrapper">
+
+    <!-- HEADER -->
+    <div id="header">
+      <div class="header-inner content">
+        <h3><a id="wordmark" href="hw4.html">Sophie @ ZJU</a></h3>
+        <div class="links">
+          <input class="side-menu" type="checkbox" id="side-menu" />
+          <label class="hamb" for="side-menu">
+            <span class="hamb-line"></span>
+          </label>
+          <nav class="nav">
+            <div class="menu">
+              <a class="selected" href="index.html">关于</a>
+              <a href="http://www.som.zju.edu.cn/" target="_blank">ZJUSOM</a>
+              <a href="#projects">项目介绍</a>
+              <a href="#books">阅读书目</a>
+              <a href="#" id="game-menu-link">休闲游戏</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="content">
+      <div class="about">
+        <!-- Left: Avatar + name -->
+        <div class="avatar">
+          <div>
+            <img src="images/avatar/avatar.jpg" alt="Sophie Feng 头像" />
+          </div>
+          <div>
+            <span class="name">
+              <span class="highlight">Hello</span> World！<br />
+              我是 <span class="highlight">凤娄菲</span>（Sophie Feng）<br />
+            </span>
+            <span class="contacts">
+              <span class="tooltip" content="邮箱">
+                <a href="#" onclick="alert('还在开发中~'); return false;">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </span>
+              <span class="tooltip" content="Twitter">
+                <a href="#" onclick="alert('还在开发中~'); return false;">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </span>
+              <span class="tooltip" content="Google Scholar">
+                <a href="#" onclick="alert('还在开发中~'); return false;">
+                  <i class="fa-brands fa-google"></i>
+                </a>
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: affiliation info -->
+        <div class="info">
+          <div>浙江大学本科生</div>
+          <div>商业大数据分析专业</div>
+          <div>管理学院 <a href="http://www.som.zju.edu.cn/">（School of Management）</a></div>
+          <div>大三在读</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUMMARY / BIO -->
+    <div class="white-background">
+      <div class="content summary">
+        <div>
+          <p>我就读于
+            <a href="https://www.zju.edu.cn/">浙江大学</a>，
+            专业方向为 <strong>信息系统与统计学</strong> 的交叉领域。
+            我研究 <em>信息系统</em> 如何被设计为更好地服务于人类需求，
+            以及人类如何将其更好地应用于 <em>商业场景</em> 和 <em>日常生活</em>。
+          </p>
+        </div>
+        <p style="margin: 10px 0 5px;">近期，我正在研究：</p>
+        <blockquote>
+          <p><em>基于 vibe coding，设计能够帮助用户完成复杂任务的实用 AI 应用程序。</em></p>
+        </blockquote>
+        <div>
+          点击下方卡片，跳转到代表我研究内容的项目：
+        </div>
+      </div>
+
+      <!-- Theme cards -->
+      <div class="content wide">
+        <div class="themes">
+
+          <div class="theme">
+            <div class="inner">
+              <a href="#db-project">
+                <img class="img" src="images\style\WPS图片(1).png" alt="水果店数据库系统" />
+                <div class="text">
+                  <div class="name">水果店数据库系统</div>
+                  <div class="desc"><strong>技术栈</strong> SQL Server / ER图 / 数据字典</div>
+                  <div class="desc"><strong>内容</strong> 需求分析、概念设计、逻辑结构设计到系统实现全流程</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="theme">
+            <div class="inner">
+              <a href="#ai-project">
+                <img class="img" src="images/style/PTA.jpg" alt="AI助教插件开发" />
+                <div class="text">
+                  <div class="name">基于PTA网页的AI助教插件</div>
+                  <div class="desc"><strong>合作开发</strong>AI+教育插件，项目获得技术奖项与市场支持</div>
+                  <div class="desc"><strong>贯穿</strong>商业分析、demo设计、插件完善、商业化落地</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="theme">
+            <div class="inner">
+              <a href="#rag-project">
+                <img class="img" src="images/style/project.png" alt="RAG检索引擎" />
+                <div class="text">
+                  <div class="name">RAG 学术论文检索引擎</div>
+                  <div class="desc"><strong>我们正在开发</strong>一款 RAG 检索引擎，帮助用户为其研究寻找相关论文和资料。</div>
+                  <div class="desc"><strong>项目仍处于</strong>快速迭代阶段，积累了数万篇学术论文。</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content summary">
+        如果你有兴趣在浙大与我探讨相关课题，欢迎合作！
+        <br/>
+        <span class="highlight">请阅读
+          <a href="#db-project">项目经历</a>
+          ，了解我们的开放项目。
+        </span>
+        <span style="margin-top: 10px; display: block;">也可以<a href="#" id="game-link" style="color: var(--color-primary); text-decoration: underline; cursor: pointer;">先玩一个打飞机小游戏</a>放松一下😊</span>
+      </div>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <div id="projects" class="content publications">
+      <h2>项目经历</h2>
+
+      <div id="db-project" class="topic">
+        <div class="header">数据库系统设计</div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/style/WPS图片(1).png" alt="水果店数据库系统" />
+          </div>
+          <div class="information">
+            <div class="title">水果店信息管理数据库系统设计与实现</div>
+            <div class="authors">课程小组项目</div>
+            <div class="venue"><b>浙江大学数据库技术课程项目，2024年春</b></div>
+            <div class="desc" style="margin-top: 10px; line-height: 1.8;">
+              <p><strong>项目概述：</strong></p>
+              <p>项目任务分为需求分析、概念设计、逻辑结构设计和数据库系统实现。以真实水果店运营作为参考，以SQL Server为平台，流程图、ER图、数据字典为工具，构建了实现货品入库出库、前台出售、退回、人员管理功能的完整数据库。</p>
+              <div style="margin-top: 8px;">
+                <span style="display: inline-block; background: #f0f0f0; padding: 5px 12px; margin-right: 10px; border-radius: 4px;">SQL Server</span>
+                <span style="display: inline-block; background: #f0f0f0; padding: 5px 12px; margin-right: 10px; border-radius: 4px;">ER图</span>
+                <span style="display: inline-block; background: #f0f0f0; padding: 5px 12px; border-radius: 4px;">数据字典</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="ai-project" class="topic">
+        <div class="header">AI 与教育</div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/style/PTA.jpg" alt="AI助教插件开发" />
+          </div>
+          <div class="information">
+            <div class="title">基于PTA网页的AI助教插件开发</div>
+            <div class="authors">合作开发</div>
+            <div class="venue"><b>浙江大学校级SRTP项目，2025年</b></div>
+            <div class="desc" style="margin-top: 10px; line-height: 1.8;">
+              <p><strong>项目概述：</strong></p>
+              <p>项目获得技术奖项与市场支持。从商业分析开始，经历demo设计与插件完善，最终实现商业化落地。开发了一款AI+教育插件，帮助学生在PTA平台上获得实时反馈和个性化学习建议，提升编程学习效率。目前已在github上开源。</p>
+              <div style="margin-top: 8px;">
+                <span style="display: inline-block; background: #f0f0f0; padding: 5px 12px; margin-right: 10px; border-radius: 4px;">AI大模型</span>
+                <span style="display: inline-block; background: #f0f0f0; padding: 5px 12px; margin-right: 10px; border-radius: 4px;">Web开发</span>
+                <span style="display: inline-block; background: #f0f0f0; padding: 5px 12px; margin-right: 10px; border-radius: 4px;">产品设计</span>
+                <span style="display: inline-block; background: #f0f0f0; padding: 5px 12px; margin-right: 10px; border-radius: 4px;">商业化</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rag-project" class="topic">
+        <div class="header">智能检索与推荐</div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/style/project.png" alt="RAG检索引擎" />
+          </div>
+          <div class="information">
+            <div class="title">RAG 学术论文检索引擎</div>
+            <div class="authors">团队项目</div>
+            <div class="venue"><b>浙江大学 AIMLab创新项目，2026年</b></div>
+            <div class="desc" style="margin-top: 10px; line-height: 1.8;">
+              <p><strong>项目概述：</strong></p>
+              <p>开发了一款基于检索增强生成（RAG）的学术论文检索引擎。系统通过语义检索和大语言模型结合，帮助用户快速找到研究相关的学术论文和资料。支持查询和智能讲解生成。项目仍处于快速迭代阶段，已积累了数万篇学术论文的知识库，为学术研究社区提供高效的文献发现工具。</p>
+              <div style="margin-top: 8px;">
+                <span style="display: inline-block; background: #f0f0f0; padding: 5px 12px; margin-right: 10px; border-radius: 4px;">RAG</span>
+                <span style="display: inline-block; background: #f0f0f0; padding: 5px 12px; margin-right: 10px; border-radius: 4px;">向量数据库</span>
+                <span style="display: inline-block; background: #f0f0f0; padding: 5px 12px; margin-right: 10px; border-radius: 4px;">LLM</span>
+                <span style="display: inline-block; background: #f0f0f0; padding: 5px 12px; margin-right: 10px; border-radius: 4px;">语义检索</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOKS SECTION -->
+    <div id="books" class="content publications">
+      <h2>我读过 / 正在读的书</h2>
+
+      <div id="topic-campus" class="topic">
+        <div class="header">文学经典</div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/books/红楼梦.avif" alt="红楼梦" />
+          </div>
+          <div class="information">
+            <div class="title">红楼梦</div>
+            <div class="authors">曹雪芹</div>
+            <div class="venue"><b>读完：2025年1月</b></div>
+            <div class="resources">
+              <span class="tooltip" content="购买链接">
+                <a href="https://item.jd.com/10008245.html" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+              </span>
+              <span class="tooltip" content="豆瓣">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </span>
+              <span class="tooltip" content="分享">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/books/百年孤独.avif" alt="百年孤独" />
+          </div>
+          <div class="information">
+            <div class="title">百年孤独</div>
+            <div class="authors">加西亚·马尔克斯</div>
+            <div class="venue"><b>读完：2022年6月</b></div>
+            <div class="resources">
+              <span class="tooltip" content="购买链接">
+                <a href="https://item.jd.com/14881578.html" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+              </span>
+              <span class="tooltip" content="豆瓣">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </span>
+              <span class="tooltip" content="分享">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/books/活着.avif" alt="活着" />
+          </div>
+          <div class="information">
+            <div class="title">活着</div>
+            <div class="authors">余华</div>
+            <div class="venue"><b>读完：2022年6月</b></div>
+            <div class="resources">
+              <span class="tooltip" content="购买链接">
+                <a href="https://item.jd.com/10162223027263.html" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+              </span>
+              <span class="tooltip" content="豆瓣">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </span>
+              <span class="tooltip" content="分享">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/books/美丽新世界.avif" alt="美丽新世界" />
+          </div>
+          <div class="information">
+            <div class="title">美丽新世界</div>
+            <div class="authors">奥尔德斯·赫胥黎</div>
+            <div class="venue"><b>读完：2023年2月</b></div>
+            <div class="resources">
+              <span class="tooltip" content="购买链接">
+                <a href="https://item.jd.com/12077677.html" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+              </span>
+              <span class="tooltip" content="豆瓣">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </span>
+              <span class="tooltip" content="分享">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/books/1984.avif" alt="1984" />
+          </div>
+          <div class="information">
+            <div class="title">1984</div>
+            <div class="authors">乔治·奥威尔</div>
+            <div class="venue"><b>读完：2023年3月</b></div>
+            <div class="resources">
+              <span class="tooltip" content="购买链接">
+                <a href="https://item.jd.com/13571072.html" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+              </span>
+              <span class="tooltip" content="豆瓣">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </span>
+              <span class="tooltip" content="分享">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="topic-pets" class="topic">
+        <div class="header">推理与悬疑</div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/books/解密.avif" alt="解密" />
+          </div>
+          <div class="information">
+            <div class="title">解密</div>
+            <div class="authors">麦家</div>
+            <div class="venue"><b>读完：2023年11月</b></div>
+            <div class="resources">
+              <span class="tooltip" content="购买链接">
+                <a href="https://item.jd.com/14699854.html" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+              </span>
+              <span class="tooltip" content="豆瓣">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </span>
+              <span class="tooltip" content="分享">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/books/坏小孩.avif" alt="坏小孩" />
+          </div>
+          <div class="information">
+            <div class="title">坏小孩</div>
+            <div class="authors">紫金陈</div>
+            <div class="venue"><b>读完：2024年3月</b></div>
+            <div class="resources">
+              <span class="tooltip" content="购买链接">
+                <a href="https://item.jd.com/10171868480471.html" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+              </span>
+              <span class="tooltip" content="豆瓣">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </span>
+              <span class="tooltip" content="分享">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="topic-project" class="topic">
+        <div class="header">轻松阅读</div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/books/咸鱼.avif" alt="咸鱼大王统治地球计划" />
+          </div>
+          <div class="information">
+            <div class="title">咸鱼大王统治地球计划</div>
+            <div class="authors">咸鱼大王软软</div>
+            <div class="venue"><b>在读中：2026年3月</b></div>
+            <div class="resources">
+              <span class="tooltip" content="购买链接">
+                <a href="https://item.jd.com/10212798255368.html" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+              </span>
+              <span class="tooltip" content="豆瓣">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </span>
+              <span class="tooltip" content="分享">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/books/鲜花盛开.avif" alt="鲜花盛开的森林" />
+          </div>
+          <div class="information">
+            <div class="title">鲜花盛开的森林</div>
+            <div class="authors">三岛由纪夫</div>
+            <div class="venue"><b>读完：2023年5月</b></div>
+            <div class="resources">
+              <span class="tooltip" content="购买链接">
+                <a href="https://item.jd.com/10155646367640.html" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+              </span>
+              <span class="tooltip" content="豆瓣">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </span>
+              <span class="tooltip" content="分享">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="thumbnail">
+            <img src="images/books/风.avif" alt="他知道风从哪个方向来" />
+          </div>
+          <div class="information">
+            <div class="title">他知道风从哪个方向来</div>
+            <div class="authors">玖月晞</div>
+            <div class="venue"><b>读完：2023年4月</b></div>
+            <div class="resources">
+              <span class="tooltip" content="购买链接">
+                <a href="https://item.jd.com/10061767213950.html" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+              </span>
+              <span class="tooltip" content="豆瓣">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </span>
+              <span class="tooltip" content="分享">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GAME SECTION -->
+    <div id="game-section" class="game-section" style="display: none;">
+      <div class="content">
+        <div class="game-container">
+          <canvas id="game-canvas"></canvas>
+          <div class="game-info">
+            <h2>打飞机游戏</h2>
+            <p><strong>操作说明：</strong></p>
+            <ul>
+              <li>方向键或 WASD 键控制飞机移动</li>
+              <li>自动射击，击中敌机获得分数</li>
+              <li>收集道具：⚡快速射击、❤️治疗、🛡️无敌盾</li>
+              <li>P 键暂停/继续游戏</li>
+              <li>R 键重新开始游戏</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        <span>Copyright © 凤娄菲 Sophie Loufei Feng</span>
+      </div>
+    </footer>
+
+  </div>

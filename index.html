@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loufei Feng | Data Scientist & AI Research</title>
+    <meta name="description" content="Portfolio of Loufei Feng - Zhejiang University student specializing in Data Science, AI, and Information Systems">
+    <meta name="keywords" content="data science, AI, machine learning, vue, zhejiang university, portfolio">
+    <meta name="author" content="Loufei Feng">
+    <meta name="theme-color" content="#1a3a52">
+    
+    <!-- Preconnect to fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Loufei Feng | Data Scientist & AI Research">
+    <meta property="og:description" content="Portfolio showcasing projects in RAG, AI Education, Database Systems, and more">
+    <meta property="og:url" content="https://sophiezjufluffy.github.io">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #app {
+            width: 100%;
+            min-height: 100vh;
+        }
+        
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Loading state */
+        body.loading #app::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: white;
+            z-index: 9999;
+            animation: fadeOut 0.5s ease-out 0.5s forwards;
+        }
+        
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

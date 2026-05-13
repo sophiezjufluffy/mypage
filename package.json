@@ -1,0 +1,30 @@
+{
+  "name": "loufei-feng-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio for Loufei Feng - Data Scientist & AI Research",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node24": "^24.0.4",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/tsconfig": "^0.9.1",
+    "vite": "^5.0.0"
+  },
+  "keywords": [
+    "portfolio",
+    "data-science",
+    "ai",
+    "vue",
+    "zhejiang-university"
+  ],
+  "author": "Loufei Feng",
+  "license": "MIT"
+}

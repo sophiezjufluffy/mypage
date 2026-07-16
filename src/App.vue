@@ -455,6 +455,8 @@ export default {
     const showMobileMenu = ref(false)
     const isMobile = ref(false)
 
+    const cvUrl = import.meta.env.BASE_URL + 'CV.pdf'
+
     const checkMobile = () => {
       isMobile.value = window.innerWidth <= 768
     }
@@ -489,7 +491,8 @@ export default {
       isMobile,
       toggleMobileMenu,
       closeMobileMenu,
-      scrollToSection
+      scrollToSection,
+  cvUrl
     }
   }
 }

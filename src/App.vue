@@ -70,7 +70,7 @@
           </p>
           <div class="cta-buttons">
             <a href="#projects" class="btn btn-primary">View My Work</a>
-            <a href="/CV.pdf" class="btn btn-secondary" download>Download CV</a>
+            <a href="/public/CV.pdf" class="btn btn-secondary" download>Download CV</a>
           </div>
         </div>
       </div>

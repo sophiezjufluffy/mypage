@@ -60,8 +60,7 @@
           </h2>
           <p class="hero-subtitle">
             Undergraduate at <strong>Zhejiang University</strong> | 
-            B.S. in Business Big Data Analysis | 
-            Double Degree in Information Management & Information Systems
+            Info Mgmt & Info Sys / Stats (Dual Degree)
           </p>
           <p class="hero-description">
             Passionate about designing <em>intelligent information systems</em> that solve real-world problems. 
